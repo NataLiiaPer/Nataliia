@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task3prep2 {
 //    task 3 prerp 2:
 //    print numbers from 0 to 40, step 7, wuthout loops, and also count the sum of those numbers, no loops.

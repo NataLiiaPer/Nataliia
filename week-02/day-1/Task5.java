@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task5 {
     /*
     create a for cycle to read all elements of the array, print them and find the biggest number, store it in the variable

@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task13part2preparationIf {
 
     public static void main(String[] args) {

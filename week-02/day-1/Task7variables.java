@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task7variables {
         public static void main (String[]args) {
     //write code so that a will contain value of b, b of c, c of a.

@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task10step {
     public static void main (String[]args) {
 //print numbers from 4 to 100, step 5 and print their sum

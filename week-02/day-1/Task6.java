@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task6 {
     //print numbers from the array that are bigger than 5 and count how many numbers it is. Also count
     //how many numbers are in the array in total and print the result.

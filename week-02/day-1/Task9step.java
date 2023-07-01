@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task9step {
     public static void main (String[]args) {
 //print numbers from 2 to 100, step 3 and print how many numbers it is

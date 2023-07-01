@@ -1,11 +1,9 @@
-package org.example;
-
 public class BreakContinue {
     public static void main(String[]args)
     {
 int i =0;
 while (true){
-    System.out.println(i);// ask Krystof to check this code
+    System.out.println(i);// ask mentor to check this code
     i++;
     if(i==5)
     break;

@@ -1,5 +1,3 @@
-package org.example;
-
 public class Task12stepExtra {
     public static void main(String[] args) {
 //for numbers from 1 to 100, step 3 do:
