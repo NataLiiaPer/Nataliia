@@ -55,7 +55,8 @@ public class VariableMutation {
         // (print as a boolean)
 
         int j = 1521;
-        
+        boolean divOr = j%3==0 || j%5==0;
+        System.out.println(divOr);
         // determine if j is divisible by 3 or 5 (print as a boolean)
     }
 }
