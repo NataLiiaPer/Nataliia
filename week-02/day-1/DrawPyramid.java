@@ -17,7 +17,7 @@ public class DrawPyramid {
 
             // Write your code to draw the pyramid here
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Please enter the triangle height: ");
+            System.out.println("Please enter the pyramid height: ");
             int height = scanner.nextInt();
 
             for (int row = 0; row < height; row++){

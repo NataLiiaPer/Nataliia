@@ -20,7 +20,7 @@ public class DrawTriangle {
             System.out.println("Please enter the triangle height: ");
            int height = scanner.nextInt();
             for (int row = 1; row <= height; row++) {
-                for (int j = 1; j <= row; j++) {
+                for (int asterix = 1; asterix <= row; asterix++) {
                     System.out.print("* ");
                 }
                 System.out.println();
