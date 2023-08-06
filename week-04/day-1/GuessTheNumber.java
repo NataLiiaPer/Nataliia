@@ -6,6 +6,17 @@ public class GuessTheNumber {
         System.out.println("Please enter your guess: ");
         Scanner scanner = new Scanner(System.in);
         int guess = scanner.nextInt();
+        if (storedNumber>guess){
+            System.out.println("The stored number is greater than "+guess);
+        }
+        if (storedNumber<guess){
+            System.out.println("The stored number is smaller than "+guess);
+        }
+        if (storedNumber==guess){
+            System.out.println("You have found the stored number "+guess);
+        }
+
+
 
         // Write a program that stores a number and the user has to figure it out.
         // The user can input guesses. After each guess the program responds

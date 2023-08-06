@@ -19,7 +19,7 @@ public class DrawTriangle {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter the triangle height: ");
            int height = scanner.nextInt();
-            for (int row = 1; row <= height; row++) {
+            for (int row = 1; row <= height; row++) { // height = 4;row = 1
                 for (int asterix = 1; asterix <= row; asterix++) {
                     System.out.print("* ");
                 }

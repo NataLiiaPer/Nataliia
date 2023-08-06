@@ -2,9 +2,12 @@ public class ReturnStatement {
     public static void main(String[] args) {
     String shouting = caps("Why are you reading my diary???");
         System.out.println(shouting);
+
         int [] awesomeArray = giveMeArrayFromInts(3,7,1);
         System.out.println(awesomeArray[0]);
+
     printMessage();
+
     int sum = add(5,4);
         System.out.println(sum);
     }
@@ -13,9 +16,10 @@ public class ReturnStatement {
     }
 
     public static int add (int a,int b) {
-        return a+b;
-    }
+       // return a+b;
 
+int sum = a+b;
+        return sum;}
     public static String caps(String s) {
 
         return s.toUpperCase();
