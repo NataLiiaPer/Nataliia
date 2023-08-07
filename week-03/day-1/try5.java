@@ -12,9 +12,11 @@ public class try5 {
             for (int i = 0; i < input; i++){
                 for (int j = 0; j < input; j++){
                     System.out.print("%");
-                    if(j ==input-1){
-                        System.out.print("\n");
+//                    if(j ==input-1){
+//                        System.out.print("\n");
 
-                    }
-                }}}}
+                 //   }
+                }
+                System.out.println();
+            }}}
 

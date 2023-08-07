@@ -42,17 +42,17 @@ public class DrawDiamond {
             for (int asterics = 0; asterics < row * 2 + 1; asterics++) {  // space = 0, space <= 5 - 0
                 System.out.print("*");
             }
-            System.out.print("\n");
-        }
-        for (int row = height; row >= 0; row--) {
-            for (int space = 0; space <= height - row; space++) {
-                System.out.print("_");
-            }
-            for (int asterics = 0; asterics < row * 2 + 1; asterics++) {
-                System.out.print("*");
-            }
             System.out.println();
         }
+//        for (int row = height; row >= 0; row--) {
+//            for (int space = 0; space <= height - row; space++) {
+//                System.out.print("_");
+//            }
+//            for (int asterics = 0; asterics < row * 2 + 1; asterics++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
     }
 }
 
