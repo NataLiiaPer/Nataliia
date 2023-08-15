@@ -1,48 +1,46 @@
-//import java.util.Scanner;
-//
-//public class Calculator {
-//    public static void main(String... args) {
-//        System.out.println("Please type in the expression: ");
-//        Scanner scanner = new Scanner(System.in);
-//        String operator = scanner.next();
-//        int operand1 = scanner.nextInt();
-//        int operand2 = scanner.nextInt();
-//      int result = calculate(operator, operand1, operand2);
-//
-//
-//        System.out.println(result);
-//
-//    }
-//
-//    public static int calculate(String a, int b, int c) {
-//    //   int result;
-//        if (a == "+") {
-//            result = b + c;
-//            //    int result=sum;
-//       //     System.out.println(result);
-//        }
-//        else if (a == "-") {
-//            int minus = b - c;
-//            //  result = minus;
-//
-//            System.out.println(minus);
-//        }
-//        if (a == "/") {
-//            int result = b / c;
-//            System.out.println(result);
-//        }
-//        if (a == "*") {
-//            int result = b * c;
-//            System.out.println(result);
-//        }
-//        if (a == "%") {
-//            int result = b % c;
-//            System.out.println(result);
-//        }
+import java.util.Scanner;
 
-//      return result;
-//    }
-//}
+public class Calculator {
+    public static void main(String... args) {
+        System.out.println("Please type in the expression: ");
+        Scanner scanner = new Scanner(System.in);
+        String operator = scanner.next();
+        int operand1 = scanner.nextInt();
+        int operand2 = scanner.nextInt();
+        int result = calculate(operator, operand1, operand2);
+
+
+        System.out.println(result);
+
+    }
+
+    public static int calculate(String a, int b, int c) {
+        int result = 0;
+        if (a.equals("+")) {
+            result = b + c;
+
+        }
+        if (a.equals("-")) {
+            result = b - c;
+
+
+        }
+        if (a.equals("/")) {
+            result = b / c;
+
+        }
+        if (a.equals("*")) {
+            result = b * c;
+
+        }
+        if (a.equals("%")) {
+            result = b % c;
+
+        }
+
+        return result;
+    }
+}
 
 
 // Create a simple calculator application which reads parameters from the prompt and prints the result back.

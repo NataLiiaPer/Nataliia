@@ -1,21 +1,28 @@
 public class NestedLoop10 {
     public static void main(String[] args) {
         int height = 5;
-        for (int row = 1; row < height; row++) {
-            for (int space = 1; space < row; space++) {
-                System.out.println("_");
+        int counter = 1;
+        for (int row = 0; row < height; row++) {
+            for (int x = 0; x <= height - row; x++) {
+                System.out.print(" ");
             }
-        }
-        for (int row = 1; row < height; row++) {
-            for (int number = 1; number < row; number++) {
-                System.out.println(number);
+
+            for (int number = 1; number <= row+1; number++) {
+                System.out.print(number);
             }
+
+            for (int number1 = row; number1 <= row&&number1>0; number1--) {
+                if(row==0){
+                System.out.print("");}
+                System.out.print(number1);
+            }
+         //   counter++;
+            System.out.println();
         }
-        System.out.println();
     }
 }
 //            _____1
-//                121
-//               12321
-//              1234321
-//             123454321
+//            ____12 1
+//            ___123 21
+//            __1234 321
+//            _12345 4321

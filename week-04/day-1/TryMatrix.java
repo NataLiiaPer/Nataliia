@@ -23,7 +23,7 @@ public class TryMatrix {
                  }
                 System.out.print(multidimensionalArray[row][column]);
             }
-            System.out.println("");
+            System.out.println();
         }
 
 

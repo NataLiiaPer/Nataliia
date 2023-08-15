@@ -35,7 +35,7 @@ public class DrawDiamond {
         // o*
         // *
 
-        for (int row = 0; row < height; row++) { // row = 0, height = 5
+        for (int row = 0; row < height; row++) { // row = 0, height = 4
             for (int space = 0; space <= height - row; space++) {  // space = 0, space <= 5 - 0
                 System.out.print("_");
             }
