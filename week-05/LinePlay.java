@@ -5,32 +5,23 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class LinePlay {
     public static void drawImage(Graphics graphics) {
-        int xOne=0;
-        int yOne=20;
-        for (int i = 0; i <= 320; i+=20) {
 
-            xOne +=i;
-            yOne +=i;
-            lineToCenter(xOne,yOne,graphics);
-        }
+        for (int i = 0; i <= WIDTH; i += 20) {
+            lineToCenter(i, i+20, graphics); //i = 0, 20, 40, ...
 
-        for (int i = 0; i <= 320; i+=20) {
-
-            xOne +=i;
-            yOne +=i;
-            lineToCenter(xOne,yOne,graphics);
         }
 
 
     }
-    public static void lineToCenter (int x,int y,Graphics graphics){
 
-
-        graphics.setColor(Color.magenta);
-        graphics.drawLine(x, 0, 320, y);
+    public static void lineToCenter(int x, int y, Graphics graphics) {
         graphics.setColor(Color.green);
-        graphics.drawLine(0, y, x, 320);
+        graphics.drawLine(0, x, y, WIDTH);
+        graphics.setColor(Color.magenta);
+        graphics.drawLine(x, 0, WIDTH, y);
+
     }
+
     static int WIDTH = 320;
     static int HEIGHT = 320;
 

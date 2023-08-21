@@ -10,22 +10,21 @@ public class Diagonals {
         // Use this function to draw the canvas' diagonals
         // If the line starts from the upper-left corner it should be green, otherwise it should be red
         // Make decision about the color in the function
-        lineToCenter(0, 0, graphics);
-        lineToCenter(0, 320, graphics);
+       lineToCenter(0,  graphics);
+       lineToCenter(320,  graphics);
 
     }
 
-    public static void lineToCenter(int x, int y, Graphics graphics) { //why
+    public static void lineToCenter(int x,  Graphics graphics) { //why
 
-        int y2 = 320;
-        int x2 = 0;
-        if (y2 == 320) {
+
+        if (x!=320) {
             graphics.setColor(Color.green);
-            graphics.drawLine(x, y, 320, y2);
+            graphics.drawLine(x, 0, 320, 320);
         }
-        if (x2 == 0) {
+        if (x==320) {
             graphics.setColor(Color.red);
-            graphics.drawLine(x, y, 320, x2);
+            graphics.drawLine(x, 0, 0, 320);
         }
     }
 

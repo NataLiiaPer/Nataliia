@@ -16,10 +16,9 @@ public class CenterBoxFunction {
         // Avoid code duplication!
 
         int upperBound  = 100;
-        int lowerBound = 0;
+        int lowerBound = 50;
         Random rand = new Random();
-        int randomNumber =  rand.nextInt(upperBound - lowerBound);
-
+        int randomNumber =  50+rand.nextInt(upperBound - lowerBound);
 
         for (int i = 50; i <= 150; i+=50) {
 
@@ -27,15 +26,15 @@ public class CenterBoxFunction {
 
             drawAsquare(xOne,graphics);
         }
-
     }
 
-    public static void drawAsquare (int x,Graphics graphics){
+    public static void drawAsquare (int size,Graphics graphics){
 
-        int width = 160-x;
-        int height = 160-x;
-        int y = x;
-        graphics.drawRect(x, y, width, height);
+        int x = WIDTH/2-size/2;
+        int y = HEIGHT /2-size/2;
+
+
+        graphics.drawRect(x, y, size, size);
 
     }
 

@@ -17,9 +17,9 @@ public class FunctionToCenter {
         for (int i = 0; i <= 320; i += 20) {
 
             lineToCenter(0, i, graphics);
-//            lineToCenter(xOne, 0, graphics);
-//            lineToCenter(320, yOne, graphics);
-//            lineToCenter(xOne, 320, graphics);
+            lineToCenter(i, 0, graphics);
+            lineToCenter(320, i, graphics);
+            lineToCenter(i, 320, graphics);
         }
 
     }
