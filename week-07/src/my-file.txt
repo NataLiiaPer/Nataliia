@@ -1,0 +1,10 @@
+- What is "use case testing"?
+- What is the difference between white box and black box testing?
+- What is gray box testing?
+- What is the difference between UAT (User Acceptance Testing) and System
+  testing?
+- Mention the differences between Regression Testing, Smoke Testing and
+  Retesting.
+- What is risk-based testing, what is the point of it?
+- What is the difference between Static and Dynamic Testing?
+- What are different test levels?

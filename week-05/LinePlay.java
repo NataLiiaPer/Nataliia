@@ -28,7 +28,7 @@ public class LinePlay {
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        RainbowBoxFunction.ImagePanel panel = new RainbowBoxFunction.ImagePanel();
+        ImagePanel panel = new ImagePanel();
         panel.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         jFrame.add(panel);
         jFrame.setLocationRelativeTo(null);

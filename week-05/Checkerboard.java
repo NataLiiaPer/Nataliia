@@ -17,13 +17,13 @@ public class Checkerboard {
                 int x = column * boxSize;
                 if ((row + column) % 2 == 0) {
                     graphics.setColor(Color.black);
-                    graphics.drawRect(x, y, 20, 20);
-                    graphics.fillRect(x, y, 20, 20);
+                    graphics.drawRect(x, y, boxSize, boxSize);
+                    graphics.fillRect(x, y, boxSize, boxSize);
                     //
                 } else {
                     graphics.setColor(Color.white);
-                    graphics.drawRect(x, y, 20, 20);
-                    graphics.fillRect(x, y, 20, 20);
+                    graphics.drawRect(x, y, boxSize, boxSize);
+                    graphics.fillRect(x, y, boxSize, boxSize);
                 }
             }
         }
