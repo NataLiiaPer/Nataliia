@@ -1,6 +1,7 @@
 public class numberAdder {
     public static void main(String[] args) {
-        int f = sumFactorial(3);
+       int f = sumFactorial(5);
+
         System.out.println(f);
     }
 

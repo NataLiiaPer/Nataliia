@@ -1,35 +1,28 @@
 public class Bunnies2 {
     public static int findSumEars(int n) {
         System.out.println(n);
-        if (n >0&&n%2!=0) {
+
+        if (n <= 0) {
+            return 0; //base case
+        }
+        if (n % 2 != 0) { // an odd number
             int count = findSumEars(n - 1);
             int result1 = 2 + count;
             return result1;
+            //count = findSumEars(1)
+            //   int result1 = 2 + 3;
 
-//            int odd = 2;
-//            return odd; //base case
-        }
-        else  {
+        } else {                            // an even number
             int count = findSumEars(n - 1);// 10
             int result2 = 3 + count;
             return result2;
-//            int odd1 = 3;
-//            return odd1; //base case
+            // count = findSumEars(0)
+            //int result2 = 3 + 0 = 3;
         }
-//        int count = findSumEars(n - 1);// 10
-//        int result = findSumEars() + count;
-   //    return result1+result2;
-
-        //2+findSumEars(4)2+8
-        //2+findSumEars(3) 2+6
-        //2+findSumEars(2) 2+4
-        //2+findSumEars(1) 2+2
-
     }
 
     public static void main(String[] args) {
-        // int bunny = 5; // Замените на нужное значение
-        int sum = findSumEars(5);
+        int sum = findSumEars(3);
 
         System.out.println("Total number of ears " + sum);
     }

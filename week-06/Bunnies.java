@@ -8,10 +8,10 @@ public class Bunnies {
         int result = 2 + count;
         return result;
 
-        //2+findSumEars(4)2+8
-        //2+findSumEars(3)2++6
-        //2+findSumEars(2) 2+4
-        //2+findSumEars(1) 2+2
+        //2+findSumEars(4)   2+8
+        //2+findSumEars(3)   2++6
+        //2+findSumEars(2)   2+4
+        //2+findSumEars(1)   2+2
 
 
         // int result = (2*findSumEars(count));
