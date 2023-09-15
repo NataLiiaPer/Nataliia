@@ -1,3 +1,5 @@
+package BlogPost;
+
 public class BlogPost {
     public static void main(String[] args) {
         Authors object1 = new Authors("John Doe", "2000.05.04.","Lorem Ipsum",
@@ -25,32 +27,6 @@ public class BlogPost {
                         "//        he told me that he wasn’t really into the whole organizer profile thing.");
         object3.getInfo();
 
-    }
-}
-
-class Authors {
-    private String authorName;
-    private String title;
-    private String year;
-    private String text;
-// это конструктор
-    public Authors(String authorName,String year, String title, String text) {
-        this.authorName = authorName;
-        this.title = title;
-        this.year = year;
-        this.text = text;
-    }
-// do we need setter? // yes without it our program won't work
-    public void setData(String authorName, String year,String title, String text) {
-        this.authorName = authorName;
-        this.title = title;
-        this.year = year;
-        this.text = text;
-
-    }
-    public void getInfo(){
-        System.out.println(title+" titled by "+authorName+" posted at "
-                +year+text);
     }
 }
 

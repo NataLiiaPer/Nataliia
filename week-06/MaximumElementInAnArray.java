@@ -1,22 +1,33 @@
 public class MaximumElementInAnArray {
     public static void main(String[] args) {
-        int[] numbers = {-1, -2, -300, -4500, -50, 60, -4};
+        int[] numbers = {-1, 2, -300};
         // int length = 6;
-        int maxElement = findMax(numbers.length-1,numbers);
+        int max = numbers[0];
+        int maxElement = findMax(max,numbers);
         System.out.println(maxElement);
+
     }
 
-    public static int findMax(int idx, int[] array) {
-         int maxElementInArray = array[0];
-        // int i = 0;
-        if (idx <0) {
-            return 0;
+    public static int findMax(int maxElementInArray, int[] array) {
+
+        if (array.length ==1) { // base case - in Array have to be at least one element!!!
+            return maxElementInArray;
         }
-        if (maxElementInArray < array[idx]) {
-            maxElementInArray = array[idx];
+
+
+        int[] newArray = Arrays.copyOfRange(array, 1, array.length); //create new
+        // Array with new length
+
+
+//        int[] newArray = new int[array.length - 1];
+//        for (int i = 0; i < newArray.length; i++) { //copy an array - only this way!!!
+//            newArray[i]  = array[i];
+//        }
+        if (maxElementInArray < array[1]) { //
+            maxElementInArray = array[1];
 
         }
-        return findMax(idx-1,array)+maxElementInArray;
+        return findMax(maxElementInArray,newArray);
     }
 }
 

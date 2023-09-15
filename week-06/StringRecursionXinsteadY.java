@@ -4,8 +4,9 @@ public class StringRecursionXinsteadY {
         char target = 'x';
         char replacement = 'y';
 
-        String result = replace(input, target, replacement);
-        System.out.println(result); // output
+//        String result = replace(input, target, replacement);
+//        System.out.println(result); // output
+        System.out.println(replace(input, target, replacement)); // output
 
     }
 
