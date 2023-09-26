@@ -3,19 +3,32 @@ package greenFoxExerciseBeforeInheritance;
 public class Test {
     public static void main(String[] args) {
         int numberOfDays = 5;
-        Person person = new Person();
-   //    person.addSomebody();
-        System.out.println(person);
-        Person person1 = new Student();//please explain one more time what we will have for this
-     //   person1.addSomebody();
-        person1.getGoal();
-        System.out.println(person1); //how to get constructor from class student?
         Student student = new Student();
-        System.out.println(student);//how to get constructor from class student?
+       // Person person1 = new Student();//please explain one more time what we will have for this
+        student.addSomebody(new Student("Bob",20, Person.Gender.MALE,"AAA"));
+        //how to print it??? //
+        System.out.println(student);
         student.skipDays(numberOfDays);
         student.introduce();
+        student.getGoal();
+
+        Person person = new Person();
+        System.out.println(person); //how to get constructor from class student?
+        person.getGoal();
+        person.introduce();
+
+
         Mentor mentor = new Mentor();
+        System.out.println(mentor);
         mentor.introduce();
+        mentor.getGoal();
+
+        Sponsor sponsor = new Sponsor();
+        System.out.println(sponsor);
+        sponsor.hire(student);
+        sponsor.introduce();
+        sponsor.getGoal();
+
     }
 }
 

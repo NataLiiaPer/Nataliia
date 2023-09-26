@@ -5,18 +5,30 @@ import java.util.List;
 
 public class Mentor extends Person{
     private List<Mentor > mentors= new ArrayList<>();
-    public enum Level{
+    private enum Level{
         JUNIOR,
         INTERMEDIATE,
         SENIOR
     }
-  private   Level level;
+ private   Level level;
+
+    public Mentor(String name, int age, Gender gender, Level level) {
+        super(name, age, gender);
+     this.level = level;
+    }
+
+    public Mentor() {
+      this.name = "Jane Doe";
+      this.age = 40;
+      this.gender =  Gender.FEMALE;
+        this.level = Level.INTERMEDIATE;
+    }
 
     public void getGoal(){
         System.out.println("Educate brilliant junior software developers.");
     }
     public void introduce(){
-        System.out.println("Hi, I'm "+ name+", a "+ age+" year old "+ gender+ level+" mentor.");
+        System.out.println("Hi, I'm "+ name+", a "+ age+" year old "+ gender+" "+ level+" mentor.");
     }
 
 }

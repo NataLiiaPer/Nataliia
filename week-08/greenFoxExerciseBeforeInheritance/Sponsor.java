@@ -6,17 +6,24 @@ import java.util.List;
 public class Sponsor extends Person {
     private List<Sponsor > sponsors= new ArrayList<>();
     String company;
-    int hiredStudents;
+    int hiredStudents=0;
 
-    public Sponsor(String name, int age, Gender gender, List<Sponsor> sponsors, String company, int hiredStudents) {
+    public Sponsor(String name, int age, Gender gender, String company, int hiredStudents) {
         super(name, age, gender);
-        this.sponsors = sponsors;
         this.company = company;
         this.hiredStudents = hiredStudents;
     }
+    public Sponsor(){
+        this.name = "Jane Doe";
+        this.age  = 50;
+        this.gender = Gender.FEMALE;
+        this.company =  "Google";
+        this.hiredStudents = 0;
+    }
+
 
     public void introduce(){
-        System.out.println("Hi, I'm"+ name+", a +"+age+" year old "+gender+" who represents "+company+" and hired"
+        System.out.println("Hi, I'm "+ name+", a "+age+" year old "+gender+" who represents "+company+" and hired "
        +hiredStudents+ " students so far.");
     }
     public void hire(Student s){
@@ -28,7 +35,7 @@ public class Sponsor extends Person {
     }
 
 }
-//    Create a Sponsor class that has the same fields and methods as the Personclass,
+//    Create a Sponsor class that has the same fields and methods as the Person class,
 //        and has the following additional
 //
 //        fields:

@@ -31,13 +31,13 @@ public class Student extends Person {
         System.out.println("Be a junior software developer.");
     }
     public void introduce(){
-        System.out.println("Hi, I'm "+ name+" , a"+ age+" year old "+gender+" from"+
+        System.out.println("Hi, I'm "+ name+" , a "+ age+" year old "+gender+" from"+
                         previousOrganization + " who skipped "+skippedDays+
                 " days from the course already.");
     }
     public void skipDays (int numberOfDays){
      skippedDays+=numberOfDays;
-        System.out.println(skippedDays);
+        System.out.println("the number of days skipped from the course"+skippedDays);
     }
 }
 

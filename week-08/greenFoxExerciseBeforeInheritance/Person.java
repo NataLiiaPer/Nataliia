@@ -15,7 +15,7 @@ public class Person {
         this.gender = gender;
     }
     public Person() {
-        this("Jane Doe",30,Gender.FEMALE);
+        this("Jane Doe",35,Gender.FEMALE);
     }
     public void getGoal(){
         System.out.println("My goal is: Live for the moment!");
