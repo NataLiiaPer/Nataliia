@@ -7,10 +7,8 @@ import java.util.Objects;
 public class Main1 {
     public static void main(String[] args) {
         List<Pokemon> pokemonListOfAsh = initializePokemons();
-        //  pokemonListOfAsh.get(2);
         // Every pokemon has a name and a type.
         // Certain types are effective against others, e.g. water is effective against fire.
-
         // Ash has a few pokemon.
         // A wild pokemon appeared!
 
@@ -34,8 +32,6 @@ public class Main1 {
 
 
     }
-
-    // maybe I have to compare wildPokemon with all pokemons?
     private static List<Pokemon> initializePokemons() {
         List<Pokemon> pokemon = new ArrayList<>();
 

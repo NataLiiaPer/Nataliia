@@ -1,6 +1,6 @@
 package BlogPost;
 
-class Authors {
+public class Authors {
     private String authorName;
     private String title;
     private String year;
@@ -23,6 +23,16 @@ class Authors {
     public void getInfo(){
         System.out.println(title+" titled by "+authorName+" posted at "
                 +year+text);
+    }
+
+    @Override
+    public String toString() {
+        return "Authors{" +
+                "authorName='" + authorName + '\'' +
+                ", title='" + title + '\'' +
+                ", year='" + year + '\'' +
+                ", text='" + text + '\'' +
+                '}';
     }
 }
 

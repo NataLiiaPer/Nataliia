@@ -1,6 +1,6 @@
 package pokemon;
 
-// public class Pokemon { // mistake???
+
 class Pokemon {
     String name;
     String type;
